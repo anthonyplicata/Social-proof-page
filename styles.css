@@ -1,0 +1,99 @@
+:root {
+    --primary-font: "League Spartan", sans-serif;
+    --dark-magenta: hsl(300, 43%, 22%);
+    --light-magenta: hsl(333, 80%, 67%);
+    --mute-magenta: hsl(303, 10%, 53%);
+    --light-pink: hsl(300, 24%, 96%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+
+    font-family: var(--primary-font);
+}
+
+.header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.header p {
+    align-items: center;
+    color: var(--mute-magenta);
+    line-height: 1.5rem;
+    margin-top: 20px;
+}
+
+h1 {
+    color: var(--dark-magenta);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.ul-list {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    
+}
+
+li {
+    font-weight: bold;
+    list-style: none;
+    margin: 1rem;
+    padding: 0.5rem;
+    color: var(--dark-magenta);
+    background-color: var(--light-pink);
+    border-radius: 8px;
+    max-width: 375px;
+}
+
+svg {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.review-cards > div {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--dark-magenta);
+    border-radius: 8px;
+    max-width: 375px;
+}
+
+.comment {
+    color: var(--light-pink);
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+}
+
+h3 {
+    color: white;
+
+}
+
+span {
+    color: var(--light-magenta);
+}
+
+@media only screen and (min-width: 768px) {
+    .review-cards {
+        display: grid;
+        grid-template-columns: repeat(3fr);
+    }
+}
